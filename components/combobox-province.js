@@ -8,12 +8,11 @@ const ComboboxProvince = () => {
         let values = Object.values(listProvince);
         setListProvince(values);
     }, [])
-    // console.log(listProvince);
     return (
         <div className="comboboxProvince">
             <label>Tỉnh thành:</label>
             <select>
-                {listProvince.map((item) => (
+                {listProvince && listProvince.length > 0 && listProvince.map((item) => (
                     <option key={uuidv4()} value={item.name}>{item.name}</option>
                 ))}
             </select>

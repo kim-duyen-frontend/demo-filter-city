@@ -8,12 +8,11 @@ const ComboboxDistrict = () => {
         let values = Object.values(listDistrict);
         setListDistrict(values)
     }, [])
-    // console.log(listDistrict);
     return (
         <div className="comboboxDistrict">
             <label>Quận huyện:</label>
             <select>
-                {listDistrict.map((item) => (
+                {listDistrict && listDistrict.length > 0 && listDistrict.map((item) => (
                     <option key={uuidv4()} value={item.name}>{item.name}</option>
                 ))}
             </select>

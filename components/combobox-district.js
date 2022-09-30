@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import data from "../quan_huyen.json";
 import { v4 as uuidv4 } from 'uuid';
+import styles from "../styles/cbdistrict.module.scss";
 
 const ComboboxDistrict = () => {
     const [listDistrict, setListDistrict] = useState(data);
@@ -9,7 +10,7 @@ const ComboboxDistrict = () => {
         setListDistrict(values)
     }, [])
     return (
-        <div className="comboboxDistrict">
+        <div className={styles.comboboxDistrict}>
             <label>Quận huyện:</label>
             <select>
                 {listDistrict && listDistrict.length > 0 && listDistrict.map((item) => (

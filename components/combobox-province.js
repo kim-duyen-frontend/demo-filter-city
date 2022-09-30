@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import data from "../tinh_tp.json";
 import { v4 as uuidv4 } from 'uuid';
+import styles from "../styles/cbprovince.module.scss";
 
 const ComboboxProvince = () => {
     const [listProvince, setListProvince] = useState(data);
@@ -9,7 +10,7 @@ const ComboboxProvince = () => {
         setListProvince(values);
     }, [])
     return (
-        <div className="comboboxProvince">
+        <div className={styles.comboboxProvince}>
             <label>Tỉnh thành:</label>
             <select>
                 {listProvince && listProvince.length > 0 && listProvince.map((item) => (

@@ -23,10 +23,10 @@ const List = () => {
                                     <h3 className={styles.title}>{item.title}</h3>
                                     <p className={styles.price}>{item.price}/tháng</p>
                                     <div className={styles.info}>
-                                        Diện tích:
+                                        Diện tích:&nbsp;
                                         <span className={styles.area}> {item.area}m2</span>
                                         &nbsp; &nbsp; Khu vực:
-                                        <span className={styles.place}> {item.district}, {item.city}</span>
+                                        <span className={styles.place}>&nbsp; Quận {item.district}, {item.city}</span>
                                     </div>
                                     <p>{item.content}</p>
                                 </div>

@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from "../styles/btnfilter.module.scss";
 
-const ButtonFilter = ({ handleChangeFilter }) => {
+const ButtonFilter = ({ handleGetData }) => {
     return (
         <div className={styles.buttonFilter}>
-            <button className={styles.btn} onClick={handleChangeFilter}>Lọc tin</button>
+            <button className={styles.btn} onClick={handleGetData}>Lọc tin</button>
         </div>
     );
 };

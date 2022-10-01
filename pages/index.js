@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import MainLayout from "../components/main-layout";
 import FilterCity from '../features/filter-city';
-import List from '../features/list';
 
 function Home() {
   return (
@@ -12,7 +11,6 @@ function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <FilterCity />
-      <List />
     </>
   )
 }

@@ -11,8 +11,8 @@ const ComboboxProvince = () => {
     }, [])
     return (
         <div className={styles.comboboxProvince}>
-            <label>Tỉnh thành:</label>
-            <select>
+            <label className={styles.label}>Tỉnh thành:</label>
+            <select className={styles.cb}>
                 {listProvince && listProvince.length > 0 && listProvince.map((item) => (
                     <option key={uuidv4()} value={item.name}>{item.name}</option>
                 ))}

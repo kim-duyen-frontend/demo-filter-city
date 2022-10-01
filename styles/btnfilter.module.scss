@@ -1,0 +1,19 @@
+.buttonFilter {
+    display: flex;
+    align-self: flex-end;
+
+    .btn {
+        width: 100px;
+        height: 40px;
+        background-color: #ffa80f;
+        color: #fff;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+    }
+}
+@media (max-width:640px){
+    .buttonFilter{
+        align-self: center;
+    }
+}

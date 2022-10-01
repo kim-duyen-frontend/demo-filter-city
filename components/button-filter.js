@@ -3,7 +3,9 @@ import styles from "../styles/btnfilter.module.scss";
 
 const ButtonFilter = () => {
     return (
-        <button className={styles.buttonFilter}>Lọc tin</button>
+        <div className={styles.buttonFilter}>
+            <button className={styles.btn}>Lọc tin</button>
+        </div>
     );
 };
 

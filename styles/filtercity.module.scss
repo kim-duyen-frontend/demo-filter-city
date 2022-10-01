@@ -1,0 +1,20 @@
+.filterCity {
+    background-color: #ffdc9a;
+    padding: 2rem 0;
+
+    .container {
+        display: flex;
+        column-gap: 20px;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width:640px) {
+    .filterCity {
+        .container {
+            flex-direction: column;
+            row-gap: 10px;
+            padding: 0 0.5rem;
+        }
+    }
+}

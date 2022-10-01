@@ -9,11 +9,15 @@ import styles from "../styles/filtercity.module.scss";
 const FilterCity = () => {
     return (
         <div className={styles.filterCity}>
-            <ComboboxProvince />
-            <ComboboxDistrict />
-            <ComboboxPrice />
-            <ComboboxArea />
-            <ButtonFilter />
+            <div className="container">
+                <div className={styles.container}>
+                    <ComboboxProvince />
+                    <ComboboxDistrict />
+                    <ComboboxPrice />
+                    <ComboboxArea />
+                    <ButtonFilter />
+                </div>
+            </div>
         </div>
     );
 };

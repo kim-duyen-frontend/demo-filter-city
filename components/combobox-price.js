@@ -4,8 +4,8 @@ import styles from "../styles/cbprice.module.scss";
 const ComboboxPrice = () => {
     return (
         <div className={styles.comboboxPrice}>
-            <label>Khoảng giá</label>
-            <select>
+            <label className={styles.label}>Khoảng giá</label>
+            <select className={styles.cb}>
                 <option value="Chọn mức giá">Chọn mức giá</option>
                 <option>Dưới 1 triệu</option>
                 <option value="1 triệu - 2 triệu">1 triệu - 2 triệu</option>

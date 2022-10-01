@@ -11,8 +11,8 @@ const ComboboxDistrict = () => {
     }, [])
     return (
         <div className={styles.comboboxDistrict}>
-            <label>Quận huyện:</label>
-            <select>
+            <label className={styles.label}>Quận huyện:</label>
+            <select className={styles.cb}>
                 {listDistrict && listDistrict.length > 0 && listDistrict.map((item) => (
                     <option key={uuidv4()} value={item.name}>{item.name}</option>
                 ))}

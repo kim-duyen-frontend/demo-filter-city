@@ -9,7 +9,7 @@ const List = ({ filterData, setFilterData }) => {
     useEffect(() => {
         setFilterData(dataHouse);
     }, [])
-    
+
     useEffect(() => {
         if (filterData) {
             setDataHouse(filterData)
@@ -29,7 +29,7 @@ const List = ({ filterData, setFilterData }) => {
                             <div className={styles.right}>
                                 <div className={styles.text}>
                                     <h3 className={styles.title}>{item.title}</h3>
-                                    <p className={styles.price}>{item.price}/tháng</p>
+                                    <p className={styles.price}>{new Intl.NumberFormat('vi-VI', { style: "currency", currency: "VND" }).format(item.price)}/tháng</p>
                                     <div className={styles.info}>
                                         Diện tích:&nbsp;
                                         <span className={styles.area}> {item.area}m2</span>
